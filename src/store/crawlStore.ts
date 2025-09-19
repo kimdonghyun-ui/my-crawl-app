@@ -33,6 +33,7 @@ export const useCrawlStore = create<CrawlState>()(
             loading: false,
             error: null,
 
+            
             // ✅ 크롤링 실행 (Python 서버 호출)
             runCrawl: async ({ site, keyword, include, exclude, minPrice, maxPrice }) => {
                 set({ loading: true, error: null });
