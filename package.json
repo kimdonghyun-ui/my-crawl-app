@@ -1,5 +1,5 @@
 {
-  "name": "my-budget-app",
+  "name": "my-crawl-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,7 +23,7 @@
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
-    "recharts": "^2.15.2",
+    "recharts": "^2.15.4",
     "tailwind-merge": "^3.2.0",
     "zustand": "^5.0.3"
   },
