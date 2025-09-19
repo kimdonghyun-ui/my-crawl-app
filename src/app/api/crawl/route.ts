@@ -6,11 +6,11 @@ export async function POST(req: Request) {
     const body = await req.json();
 
     // ✅ FastAPI 서버 주소 (환경 변수에서 불러오기)
-    const API_URL = process.env.NEXT_PUBLIC_CRAWLER_URL!;
+    const API_URL = process.env.NEXT_PUBLIC_CRAWLER_URL;
 
 
     // ✅ FastAPI로 프록시 요청
-    const res = await fetch(API_URL, {
+    const res = await fetch(`${API_URL}/crawl`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
